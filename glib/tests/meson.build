@@ -25,7 +25,7 @@ glib_tests = {
   },
   'guuid' : {},
   'gvariant' : {
-    'suite' : ['slow'],
+    'suite' : ['slow', 'flaky'],
   },
   'gwakeup' : {
     'source' : ['gwakeuptest.c', '../gwakeup.c'],
@@ -86,7 +86,7 @@ glib_tests = {
   'sort' : {},
   'spawn-multithreaded' : {},
   'spawn-singlethread' : {},
-  'strfuncs' : {},
+  'strfuncs' : {'suite': ['flaky']},
   'string' : {},
   'testing' : {},
   'test-printf' : {},
@@ -109,12 +109,12 @@ glib_tests = {
     'suite' : ['slow'],
   },
   '642026' : {
-    'suite' : ['slow'],
+    'suite' : ['slow', 'flaky'],
   },
   '642026-ec' : {
     'source' : '642026.c',
     'c_args' : ['-DG_ERRORCHECK_MUTEXES'],
-    'suite' : ['slow'],
+    'suite' : ['slow', 'flaky'],
   },
 }
 

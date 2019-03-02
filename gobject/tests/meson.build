@@ -104,5 +104,5 @@ test(
   python,
   args: files('mkenums.py'),
   env: test_env,
-  suite: ['gobject'],
+  suite: ['gobject', 'flaky'],
 )
